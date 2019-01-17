@@ -1,0 +1,86 @@
+// Place all the styles related to the simple_pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+$primary-font-stack: Helvetica, sans-serif;
+$primary-color: #8962b3; // purple
+$complement-color: #99cc66; // green
+$grayscale-color: bebebe;
+$font-color: #34495e;
+
+body {
+  background-color: white;
+  color: $font-color;
+  font: 100% $primary-font-stack;
+}
+
+//Navigation
+
+.navbar {
+  width: 100%;
+  padding-top: 0;
+  padding-bottom: 0;
+  background-color: white !important;
+}
+
+.logo-image {
+  max-height: 3.9em;
+  width: auto;
+}
+
+.navbar-brand {
+  color: $primary-color !important;
+}
+
+navbar-brand a:hover {
+  color: $complement-color !important;
+}
+
+nav li a {
+  color: $primary-color !important;
+  padding-left: 1.5em;  
+}
+
+nav li a:hover {
+  color: $complement-color !important;
+  text-decoration: none;
+  padding: 1.2em;
+  transition: color 500ms ease;
+  -webkit-transition: 500ms ease;
+}
+
+//end navigation
+
+//footer
+
+.footer-section {
+  background-color: $primary-color;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.footer-copyright p {
+  text-align: center;
+  margin: 0;
+  padding: 1em;
+}
+
+//end footer
+
+//home
+
+.content-home {
+  width: 90%;
+  margin: 0 auto;
+}
+
+#home-hero {
+ padding: 0;
+ margin: 0;
+}
+
+.hero-image {
+  width: 100%;
+}
