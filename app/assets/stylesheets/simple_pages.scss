@@ -12,19 +12,18 @@ body {
   background-color: white;
   color: $font-color;
   font: 100% $primary-font-stack;
+  line-height: 1.5em;
 }
 
 //Navigation
 
 .navbar {
   width: 100%;
-  padding-top: 0;
-  padding-bottom: 0;
   background-color: white !important;
 }
 
 .logo-image {
-  max-height: 3.9em;
+  max-height: 3.4em;
   width: auto;
 }
 
@@ -72,15 +71,83 @@ nav li a:hover {
 //home
 
 .content-home {
-  width: 90%;
+  width: 80%;
   margin: 0 auto;
 }
 
 #home-hero {
- padding: 0;
- margin: 0;
+  padding: 0;
+  margin-top: 5.5em;
+  margin-bottom: 1em;
 }
 
-.hero-image {
+.home-image {
   width: 100%;
 }
+
+.home-header {
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.home-main {
+  padding: 1em;
+}
+
+//end home
+
+//about
+
+.content-about {
+  width: 80%;
+  margin: 0 auto;
+}
+
+#about-hero {
+ padding: 0;
+ margin-top: 5.5em;
+ margin-bottom: 1em;
+}
+
+.about-image {
+  width: 100%;
+}
+
+.about-header {
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.about-main {
+  padding: 1em;
+}
+
+//end about
+
+//contact
+
+.content-contact {
+  width: 80%;
+  margin: 0 auto;
+}
+
+#contact-hero {
+  padding: 0;
+  margin-top: 5.5em;
+  margin-bottom: 1em;
+}
+
+.contact-image {
+  width: 100%;
+}
+
+.contact-header {
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.contact-main {
+  padding: 1em;
+}
+
+//end contact
