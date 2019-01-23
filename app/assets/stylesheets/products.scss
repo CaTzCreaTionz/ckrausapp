@@ -1,3 +1,66 @@
 // Place all the styles related to the products controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+$primary-font-stack: Helvetica, sans-serif;
+$primary-color: #8962b3; // purple
+$complement-color: #99cc66; // green
+$grayscale-color: bebebe;
+$font-color: #34495e;
+
+body {
+  background-color: white;
+  color: $font-color !important;
+  font: 100% $primary-font-stack;
+  line-height: 1.5em;
+}
+
+//product-overview
+
+.content-products-overview {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 5.5em;
+  margin-bottom: 1em;
+}
+
+.products-overview-header {
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.col-product {
+  border: medium solid $primary-color;
+  border-radius: 15px;
+  background-clip: padding-box;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.product-img {
+  border-radius: 15px;
+  padding: 0.5em;
+}
+
+.products-overview-main h5 {
+  color: $primary-color;
+  padding: 1em;
+}
+
+.products-overview-main p {
+  padding: 1em;
+}
+
+.products-overview-main strong {
+  padding: 1em;
+}
+
+.products-overview-main a:hover {
+  text-decoration: none !important;
+  color: $complement-color !important;
+}
+
+//end products-overview
+
