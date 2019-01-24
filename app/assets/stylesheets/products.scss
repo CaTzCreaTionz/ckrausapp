@@ -35,13 +35,13 @@ body {
   background-clip: padding-box;
   margin-top: 1em;
   margin-bottom: 1em;
-  padding-top: 1em;
+  padding-top: .7em;
   padding-bottom: 1em;
 }
 
 .product-img {
   border-radius: 15px;
-  padding: 0.5em;
+  padding: .2em;
 }
 
 .products-overview-main h5 {
@@ -64,3 +64,38 @@ body {
 
 //end products-overview
 
+//product-new
+
+.content-new-product {
+  width: 90%;
+  margin: 0 auto;
+  padding: 0;
+  margin-top: 5.5em;
+  margin-bottom: 1em;
+}
+
+//end products-new
+
+//product show
+
+.content-show-product {
+  width: 90% !important;
+  margin: 0 auto;
+  margin-top: 6em !important;
+  margin-bottom: 1em;
+}
+
+.content-show-product h5 {
+  padding: 1em;
+  font-weight: bold;
+}
+
+.content-show-product p {
+  padding: 0 1em;
+}
+
+.show-image-col {
+  padding-top: 2em;
+}
+
+//end product show
