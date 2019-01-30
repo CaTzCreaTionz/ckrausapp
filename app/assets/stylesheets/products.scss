@@ -67,7 +67,7 @@ body {
 //product-new
 
 .content-new-product {
-  width: 90%;
+  width: 80%;
   margin: 0 auto;
   padding: 0;
   margin-top: 5.5em;
@@ -75,6 +75,23 @@ body {
 }
 
 //end products-new
+
+// products form
+
+.container-fluid-form h5 {
+  margin-bottom: .2 !important;
+  line-height: .5em !important;
+}
+
+.form-control * {
+  width: 100%;
+}
+
+.product-form {
+ margin-bottom: 2em;
+}
+
+//end products form
 
 //product show
 
@@ -100,7 +117,13 @@ body {
 
 .product-show-image {
   border-radius: 15px;
-  padding: .2em;
+  padding: .5em;
+}
+
+.show-product-row {
+  border: medium solid $primary-color;
+  border-radius: 15px;
 }
 
 //end product show
+

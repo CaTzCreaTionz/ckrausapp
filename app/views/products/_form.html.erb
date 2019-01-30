@@ -1,4 +1,4 @@
-<section class="content-form">
+<section class="container-fluid-form">
 
   <div class="form-main">
     <%= form_with(model: product, local: true) do |form| %>
@@ -13,45 +13,62 @@
           </ul>
         </div>
       <% end %>
+      <div class="row new-product-row1"> 
+        <div class="col-12 form-group">
+          <h5><%= form.label :name %></h5>
+          <div class="col-12 product-form">
+            <%= form.text_field :name, class: "form-control" %>
+          </div>
+        </div>
 
-      <div class="field">
-        <%= form.label :name %>
-        <%= form.text_field :name %>
-      </div>
+        <div class="col-12 form-group">
+          <h5><%= form.label :description %></h5>
+          <div class="col-12 product-form">
+            <%= form.text_area :description, rows: "3", class: "form-control" %>
+          </div>
+        </div>
 
-      <div class="field">
-        <%= form.label :description %>
-        <%= form.text_area :description %>
-      </div>
+        <div class="col-12 form-group">
+          <h5><%= form.label :long_description %></h5>
+          <div class="col-12 product-form">
+            <%= form.text_area :long_description, rows: "10", class: "form-control" %>
+          </div>
+        </div>
+      
+        <div class="col-12 form-group">
+          <h5><%= form.label :ingredients %></h5>
+          <div class="col-12 product-form">
+            <%= form.text_area :ingredients, rows: "3", class: "form-control" %>
+          </div>
+        </div>
 
-      <div class="field">
-        <%= form.label :long_description %>
-        <%= form.text_area :long_description %>
-      </div>
+        <div class="col-12 form-group">
+          <h5><%= form.label :how_to_use %></h5>
+          <div class="col-12 product-form">
+            <%= form.text_area :how_to_use, rows: "3", class: "form-control" %>
+          </div>
+        </div>
+        
+        <div class="col-12 form-group">
+          <h5><%= form.label :price %></h5>
+          <div class="col-12 product-form">
+            <%= form.text_area :price, rows: "1" %>
+          </div>
+        </div>
 
-      <div class="field">
-        <%= form.label :ingredients %>
-        <%= form.text_area :ingredients %>
-      </div>
-
-      <div class="field">
-        <%= form.label :how_to_use %>
-        <%= form.text_area :how_to_use %>
-      </div>
-
-      <div class="field">
-        <%= form.label :price %>
-        <%= form.text_area :price %>
-      </div>
-
-      <div class="field">
-        <%= form.label :image_url %>
-        <%= form.text_field :image_url %>
-      </div>
+        <div class="col-12 form-group">
+          <h5><%= form.label :image_url %></h5>
+          <div class="col-12 product-form">
+            <%= form.text_field :image_url %>
+          </div>
+        </div>
+       
+      </div> <!-- end row -->
 
       <div class="actions">
-        <%= form.submit %>
+      <%= form.submit %>
       </div>
-    <% end %>
-  </div>
+
+    <% end %> <!-- end form do -->
+  </div> <!-- end form main -->
 </section>

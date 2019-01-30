@@ -160,6 +160,36 @@ nav li a:hover {
 }
 
 .landing-page-main {
-  margin-top: 5.5em;
+  margin-top: 6em;
   margin-bottom: 1em;
 }
+
+.landing-page-row {
+  border: medium solid $primary-color;
+  border-radius: 15px;
+}
+
+.landing-page-featured_product h5 {
+  padding: .5em;
+  font-weight: bold;
+}
+
+.landing-page-featured_product h3 {
+  padding-top: .1em;
+  padding_bottom: .5em;
+}
+
+.landing-page-main h5 {
+  padding: .5em;
+}
+
+.landing-page-image-col {
+  padding-top: .5em;
+}
+
+.landing-page-image {
+  border-radius: 15px;
+  padding: .2em;
+}
+
+//end product show
