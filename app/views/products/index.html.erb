@@ -6,26 +6,13 @@
 
   <div class="container-fluid products-overview-main">
     <div class="row products-overview">
-      <% @products.each do |product| %>
-        <div class="col-sm m-2 col-product">
-          <%= image_tag(product.image_url, class: "img-fluid product-img") %>
-          <a href="#"><h5><%= product.name %></h5></a>
-          <p><%= product.description %></p>
-          <strong>EUR <%= product.price %></strong>
-          <%= link_to 'Show', product %>
-          <%= link_to 'Edit', edit_product_path(product) %>
-          <%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %>
-        </div><!-- /col -->
-      <% end %>
+      <%= render @products %>
     </div> <!-- end row -->
   </div> <!-- end container products-overview -->
 
   <%= link_to 'New Product', new_product_path %>
 
 </section> <!-- end section products-overview -->
-
-
-
 
 
 

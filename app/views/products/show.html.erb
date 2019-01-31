@@ -22,8 +22,8 @@
 	        <%= @product.how_to_use %>
 	      </p>
         <p>
-	        <strong>Price:</strong> EUR
-	        <%= @product.price %>
+	        <strong>Price:</strong> 
+	        <%= number_to_currency(@product.price, unit: "€") %>
 	      </p>
       </div> <!-- end col show product details -->
     </div> <!-- end row show product details -->

@@ -155,41 +155,24 @@ nav li a:hover {
 //landing page
 
 .content-landing-page {
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
-}
-
-.landing-page-main {
   margin-top: 6em;
-  margin-bottom: 1em;
+  margin-bottom: 2em;
 }
 
-.landing-page-row {
-  border: medium solid $primary-color;
-  border-radius: 15px;
+.carousel {
+  max-height: 500px;
+  max-width: 500px;
+  margin: 0 auto;
+  overflow: hidden;
+
+  .item img {
+    width: 100%;
+    height: auto;
+  }
 }
 
-.landing-page-featured_product h5 {
-  padding: .5em;
+.carousel-caption {
   font-weight: bold;
 }
-
-.landing-page-featured_product h3 {
-  padding-top: .1em;
-  padding_bottom: .5em;
-}
-
-.landing-page-main h5 {
-  padding: .5em;
-}
-
-.landing-page-image-col {
-  padding-top: .5em;
-}
-
-.landing-page-image {
-  border-radius: 15px;
-  padding: .2em;
-}
-
-//end product show
