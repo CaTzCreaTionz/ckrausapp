@@ -1,0 +1,15 @@
+<section class="content-orders-show">
+
+  <header class="orders-show-header">  	
+    <h2>Order Information</h2>
+  </header> <!-- end header -->
+
+	<div class="container"> 
+	  <p><strong>Order ID: </strong><%= @order.id %></p>
+	  <p><strong>Product Name: </strong><%= @order.product.name %></p>
+	  <p><strong>Product Price: </strong><%= number_to_currency(@order.product.price, unit: "€") %></p>
+	  <p><strong>Total Price: </strong><%= number_to_currency(@order.total, unit: "€") %></p>
+	</div>
+
+</section>
+

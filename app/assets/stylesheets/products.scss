@@ -57,6 +57,10 @@ body {
   padding: 1em;
 }
 
+.products-overview-main a {
+  color: $primary-color;
+}
+
 .products-overview-main a:hover {
   text-decoration: none !important;
   color: $complement-color !important;

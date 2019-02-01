@@ -1,9 +1,10 @@
 <div class="col-sm m-2 col-product">
-  <%= image_tag(product.image_url, class: "img-fluid product-img") %>
-  <a href="#"><h5><%= product.name %></h5></a>
+  <%= link_to image_tag(product.image_url, class: "img-fluid product-img"), product_path(product.id) %>
+  <h5><%= link_to product.name, product_path(product.id) %></h5>
   <p><%=product.description %></p>
   <strong><%= number_to_currency(product.price, unit: "€") %></strong>
   <%= link_to 'Show', product %>
   <%= link_to 'Edit', edit_product_path(product) %>
   <%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %>
 </div><!-- /col -->
+
