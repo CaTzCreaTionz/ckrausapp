@@ -6,7 +6,7 @@ class ProductsController < ApplicationController
   def index
     @products = Product.all
   end
-  
+
   # GET /products/1
   # GET /products/1.json
   def show
@@ -19,6 +19,8 @@ class ProductsController < ApplicationController
 
   # GET /products/1/edit
   def edit
+    @products = Product.all
+    redirect_to products_url, notice: 'You do not have permission to edit this product.'
   end
 
   # POST /products

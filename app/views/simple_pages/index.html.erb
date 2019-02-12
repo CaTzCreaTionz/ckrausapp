@@ -4,21 +4,18 @@
 	<%= image_tag("home1.jpg", class: "img-responsive home-image") %>
   </div> <!-- end home image -->
 
-  <header class="home-header">  	
+  <header class="home-header">
     <h3>Welcome to CaTz~CreaTionz</h3>
   </header> <!-- end header -->
-  
+
   <div class="home-main">
     <h4>Handcrafted Healthy Body care products</h4>
       <ul>
-	    <li>We offer effective, natural skin care at an affordable price.</li>
+	    <li>We offer effective, natural skin care <%= link_to 'products', products_url %> at an affordable price.</li>
 	    <li>We use recycled or recyclable materials such as glass, aluminium and cardboard for our packaging as we are constantly mindful of the environment.</li>
-	    <li>Our products are free from synthetic preservatives, sodium laureath sulphate, parabens and phtalates.</li>
-	    <li>Our products contain the safest ingredients with nothing extra added for the sake of filling, colour, fragrance or bleaching.</li>
+	    <li>Our <%= link_to 'products', products_url %> are free from synthetic preservatives, sodium laureath sulphate, parabens and phtalates.</li>
+	    <li>Our <%= link_to 'products', products_url %> contain the safest ingredients with nothing extra added for the sake of filling, colour, fragrance or bleaching.</li>
 	  </ul>
   </div> <!-- end main -->
 
 </section> <!-- end home content -->
-
-
-

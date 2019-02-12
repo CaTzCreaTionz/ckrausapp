@@ -1,6 +1,6 @@
 <section class="content-orders-index">
 
-  <header class="orders-header">  	
+  <header class="orders-header">
     <h3>Current Orders</h3>
   </header> <!-- end header -->
 
@@ -13,9 +13,8 @@
           <%= link_to order.product.name, order %>
 	      </h6>
 	      <p><%= order.product.description %></p>
-	      <strong><%= number_to_currency(order.product.price, unit: "€") %></strong>      
+	      <strong><%= number_to_currency(order.product.price, unit: "€") %></strong>
 	    </div><!-- /col -->
 	  <% end %>
 	</div>
 </section>
-
