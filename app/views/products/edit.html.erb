@@ -1,6 +1,8 @@
-<h1>Editing Product</h1>
+<section class="content-show-product">
+  <h1>Editing Product</h1>
 
-<%= render 'form', product: @product %>
-
-<%= link_to 'Show', @product %> |
-<%= link_to 'Back', products_path %>
+  <%= render 'form', product: @product %>
+  <br>
+  <p><%= link_to 'Show', @product, class:"btn btn-outline-success" %>
+  <%= link_to 'Back to products', products_path, class: "btn btn-outline-secondary" %></p>
+</section> <!-- end content-show-product -->

@@ -20,12 +20,12 @@ body {
 .content-products-overview {
   width: 90%;
   margin: 0 auto;
-  margin-top: 5.5em;
+  margin-top: 6em;
   margin-bottom: 1em;
 }
 
 .products-overview-header {
-  padding-left: 1em;
+  padding-left: .5em;
   padding-right: 1em;
 }
 
@@ -37,6 +37,7 @@ body {
   margin-bottom: 1em;
   padding-top: .7em;
   padding-bottom: 1em;
+  column-gap: 20px;
 }
 
 .product-img {
@@ -57,19 +58,21 @@ body {
   padding: 1em;
 }
 
-.products-overview-main a {
+.products-overview-main h5 a {
   color: $primary-color;
 }
 
-.products-overview-main a:hover {
+.products-overview-main h5 a:hover {
   text-decoration: none !important;
   color: $complement-color !important;
 }
+ .btn-outline {
+   margin: 0.5em !important;
+ }
 
 //end products-overview
 
 //product-new
-
 .content-new-product {
   width: 80%;
   margin: 0 auto;
@@ -130,4 +133,3 @@ body {
 }
 
 //end product show
-

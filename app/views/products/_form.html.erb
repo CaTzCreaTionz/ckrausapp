@@ -1,5 +1,5 @@
 <section class="container-fluid-form">
-
+<p id="notice"><%= notice %></p>
   <div class="form-main">
     <%= form_with(model: product, local: true) do |form| %>
       <% if product.errors.any? %>
@@ -13,7 +13,7 @@
           </ul>
         </div>
       <% end %>
-      <div class="row new-product-row1"> 
+      <div class="row new-product-row1">
         <div class="col-12 form-group">
           <h5><%= form.label :name %></h5>
           <div class="col-12 product-form">
@@ -34,7 +34,7 @@
             <%= form.text_area :long_description, rows: "10", class: "form-control" %>
           </div>
         </div>
-      
+
         <div class="col-12 form-group">
           <h5><%= form.label :ingredients %></h5>
           <div class="col-12 product-form">
@@ -48,7 +48,7 @@
             <%= form.text_area :how_to_use, rows: "3", class: "form-control" %>
           </div>
         </div>
-        
+
         <div class="col-12 form-group">
           <h5><%= form.label :price %></h5>
           <div class="col-12 product-form">
@@ -62,11 +62,11 @@
             <%= form.text_field :image_url %>
           </div>
         </div>
-       
+
       </div> <!-- end row -->
 
       <div class="actions">
-      <%= form.submit %>
+      <p><%= form.submit%></p>
       </div>
 
     <% end %> <!-- end form do -->

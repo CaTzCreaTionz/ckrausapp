@@ -37,7 +37,7 @@ navbar-brand a:hover {
 
 nav li a {
   color: $primary-color !important;
-  padding-left: 1.5em;  
+  padding-left: 1.5em;
 }
 
 nav li a:hover {
@@ -48,11 +48,25 @@ nav li a:hover {
   -webkit-transition: 500ms ease;
 }
 
+.search-form-field {
+    margin-top: 5px;
+    color: $font-color;
+    border-color: $primary-color !important;
+    height: 30px;
+    padding: 10px;
+}
+
+.search-form-button {
+    background-color: $primary-color;
+    color: #fff;
+    cursor: pointer;
+    border-color: $primary-color !important;
+}
 //end navigation
 
 //footer
-
 .footer-section {
+  width: 100%;
   background-color: $primary-color;
   color: white;
   display: flex;

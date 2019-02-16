@@ -2,11 +2,11 @@
 	<p id="notice"><%= notice %></p>
 
   <div class="container-fluid show-product-main">
-    <div class="row show-product-row">     
+    <div class="row show-product-row">
       <div class="col-xs-6 col-sm-6 col-lg-4 col-xl-4 show-image-col">
         <%= image_tag(@product.image_url, class: "img-fluid product-show-image") %>
       </div> <!-- end col show pic-->
-      <div class="col show-product-col"> 
+      <div class="col show-product-col">
         <h5><%= @product.name %></h5>
         <p><%= @product.description %></p>
         <p>
@@ -22,9 +22,10 @@
 	        <%= @product.how_to_use %>
 	      </p>
         <p>
-	        <strong>Price:</strong> 
+	        <strong>Price:</strong>
 	        <%= number_to_currency(@product.price, unit: "€") %>
 	      </p>
+				<p><%= link_to 'Back to products', products_path, class: "btn btn-outline-secondary" %></p>
       </div> <!-- end col show product details -->
     </div> <!-- end row show product details -->
   </div> <!-- end container show-product-main -->
