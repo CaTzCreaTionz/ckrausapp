@@ -52,6 +52,7 @@ nav li a:hover {
     margin-top: 5px;
     color: $font-color;
     border-color: $primary-color !important;
+    border: 1px dotted $primary-color !important;
     height: 30px;
     padding: 10px;
 }
@@ -61,6 +62,7 @@ nav li a:hover {
     color: #fff;
     cursor: pointer;
     border-color: $primary-color !important;
+    border: 2px solid $primary-color !important;
 }
 //end navigation
 
@@ -143,11 +145,12 @@ nav li a:hover {
 .content-contact {
   width: 80%;
   margin: 0 auto;
+  margin-top: 5.5em;
+  margin-bottom: 2em;
 }
 
 #contact-hero {
   padding: 0;
-  margin-top: 5.5em;
   margin-bottom: 1em;
 }
 
@@ -155,13 +158,21 @@ nav li a:hover {
   width: 100%;
 }
 
-.contact-header {
-  padding-left: 1em;
-  padding-right: 1em;
+.contact-intro {
+  padding-bottom: .5em;
 }
 
-.contact-main {
-  padding: 1em;
+.contact-main h4 {
+  padding-top: .8em;
+}
+.contact-main p {
+  padding-left: .5em;
+  padding-right: .8em;
+  margin-bottom: .1em;
+}
+
+.form-group {
+  text-align: left;
 }
 
 //end contact
@@ -189,4 +200,23 @@ nav li a:hover {
 
 .carousel-caption {
   font-weight: bold;
+}
+
+// end landing page
+
+//thank you
+.content-thank-you {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 6em;
+  margin-bottom: 2em;
+}
+
+#thank-you-hero {
+ padding: 0;
+ margin-bottom: 1em;
+}
+
+.thank-you-image {
+  width: 100%;
 }

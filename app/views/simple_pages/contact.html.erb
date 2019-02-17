@@ -4,27 +4,50 @@
 	<%= image_tag("contact1.jpg", class: "img-responsive contact-image") %>
   </div> <!-- end contact image -->
 
-  <header class="contact-header">  	
-    <h3>Get in touch</h3>
-  </header> <!-- end header -->
-
   <div class="contact-main">
-	<p>We would love to hear from you so please get in touch with us.
-	<br>We will get back to you as soon as possible, usually within one working day.</p>
-	<h4>Email us</h4>
-	  <p>catz@catz-creationz.com</p>
-	<h4>Call us</h4>
-	  <p>If you are calling from Germany, you can call us on  0261 280714
-	  <br>If you are calling us from outside Germany, dial +49 261 280714<br>
-	  <br>Monday – Friday
-	  <br>9.30am – 5.00pm GMT
-	  </p>
-	<h4>Write to us</h4>
-	  <p>Catherine Kraus
-	  <br>Am Brünnchen 2
-	  <br>56072 Koblenz
-	  <br>Germany<br>
-	  </p>
-  </div> <!-- end contact main -->
+    <div class="row" id="contactrow1">
+      <div class="col-sm-12 col-md-6" id="contactcol1">
+        <h4>Get in touch</h4>
+      	<p>We would love to hear from you so please get in touch with us.
+      	<br>We will get back to you as soon as possible, usually within one working day.</p>
+      	<h4>Email us</h4>
+      	  <p>catz@catz-creationz.com</p>
+      	<h4>Call us</h4>
+      	  <p>If you are calling from Germany, you can call us on  0261 280714
+      	  <br>If you are calling us from outside Germany, dial +49 261 280714<br>
+      	  <br>Monday – Friday 9.30am – 5.00pm GMT
+      	  </p>
+      	<h4>Write to us</h4>
+      	  <p>Catherine Kraus
+      	  <br>Am Brünnchen 2
+      	  <br>56072 Koblenz
+      	  <br>Germany<br>
+      	  </p>
+      </div> <!-- end col 1  -->
 
+      <div class="col-sm-12 col-md-6" id="contactcol2">
+        <h4>Leave a message</h4>
+
+        <%= flash[:notice] %>
+
+        <%= form_with(url:"/simple_pages/thank_you", method: "post", local: true) do |form| %>
+        <div class="form-row">
+          <div class="col-md-6 form-group">
+            <p><%= form.label :name %></p>
+            <p><%= form.text_field :name, class: "form-control", placeholder: "Enter Name" %></p>
+          </div> <!-- end col -->
+          <div class="col-md-6 form-group">
+            <p><%= form.label :email %></p>
+            <p><%= form.text_field :email, class: "form-control", placeholder: "Enter Email" %></p>
+          </div> <!-- end col -->
+          <div class="col-md-12 form-group">
+            <p><%= form.label :message %></p>
+            <p><%= form.text_area :message, class: "form-control", placeholder: "Enter Message", rows: 5 %></p>
+          </div> <!-- end col -->
+        </div> <!-- end form-row -->
+        <p><%= form.submit "Send", class: "form_label" %></p>
+        <% end %>
+      </div> <!-- end contactcol2 -->
+    </div> <!-- end contactrow1 -->
+  </div> <!-- end contact main -->
 </section> <!-- end contact section -->

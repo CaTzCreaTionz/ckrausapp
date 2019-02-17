@@ -34,10 +34,9 @@ body {
   border-radius: 15px;
   background-clip: padding-box;
   margin-top: 1em;
-  margin-bottom: 1em;
+  margin-bottom: 1em !important;
   padding-top: .7em;
-  padding-bottom: 1em;
-  column-gap: 20px;
+  padding-bottom: .5em;
 }
 
 .product-img {
@@ -47,11 +46,7 @@ body {
 
 .products-overview-main h5 {
   color: $primary-color;
-  padding: 1em;
-}
-
-.products-overview-main p {
-  padding: 1em;
+  padding-top: 1em;
 }
 
 .products-overview-main strong {
@@ -66,9 +61,7 @@ body {
   text-decoration: none !important;
   color: $complement-color !important;
 }
- .btn-outline {
-   margin: 0.5em !important;
- }
+
 
 //end products-overview
 
