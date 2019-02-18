@@ -34,15 +34,15 @@
         <div class="form-row">
           <div class="col-md-6 form-group">
             <p><%= form.label :name %></p>
-            <p><%= form.text_field :name, class: "form-control", placeholder: "Enter Name" %></p>
+            <p><%= form.text_field :name, class: "form-control", placeholder: "Enter Name", required: true %></p>
           </div> <!-- end col -->
           <div class="col-md-6 form-group">
             <p><%= form.label :email %></p>
-            <p><%= form.text_field :email, class: "form-control", placeholder: "Enter Email" %></p>
+            <p><%= form.text_field :email, class: "form-control", placeholder: "Enter Email", required: true, validates: :email %></p>
           </div> <!-- end col -->
           <div class="col-md-12 form-group">
             <p><%= form.label :message %></p>
-            <p><%= form.text_area :message, class: "form-control", placeholder: "Enter Message", rows: 5 %></p>
+            <p><%= form.text_area :message, class: "form-control", placeholder: "Enter Message", rows: 5, required: true %></p>
           </div> <!-- end col -->
         </div> <!-- end form-row -->
         <p><%= form.submit "Send", class: "form_label" %></p>

@@ -1,10 +1,12 @@
-<div class="col-sm-6 col-md-6 col-lg-3 col-xl-3 col-product">
+<div class="col-sm-6 col-md-4 col-lg-3 col-xl-3 col-product">
+<div class="border">
   <%= link_to image_tag(product.image_url, class: "img-fluid product-img"), product_path(product.id) %>
   <h5><%= link_to product.name, product_path(product.id) %></h5>
   <p><%=product.description %></p>
-  <strong><%= number_to_currency(product.price, unit: "€") %></strong>
+  <strong><%= number_to_currency(product.price, class:"price", unit: "€") %></strong>
   <br>
-  <p><%= link_to 'Show', product, class:"btn btn-outline-success" %>
+  <br><p><%= link_to 'Show', product, class:"btn btn-outline-success" %>
   <%= link_to 'Edit', edit_product_path(product), class:"btn btn-outline-warning" %>
   <%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' }, class:"btn btn-outline-danger" %></p>
+  </div>
 </div><!-- /col -->
