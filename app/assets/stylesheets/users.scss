@@ -1,0 +1,22 @@
+// Place all the styles related to the users controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+$primary-font-stack: Helvetica, sans-serif;
+$primary-color: #8962b3; // purple
+$complement-color: #99cc66; // green
+$grayscale-color: bebebe;
+$font-color: #34495e;
+
+//user new
+
+.content-user {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 6em;
+  margin-bottom: 1em;
+}
+
+.sign-in {
+  width: 20% !important;
+  margin: 0 auto;
+}
