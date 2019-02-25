@@ -26,10 +26,10 @@ ActiveRecord::Schema.define(version: 2019_02_18_185047) do
     t.string "image_url"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.text "ingredients"
     t.text "long_description"
-    t.decimal "price"
+    t.text "ingredients"
     t.text "how_to_use"
+    t.decimal "price"
   end
 
   create_table "users", force: :cascade do |t|

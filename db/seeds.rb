@@ -8,8 +8,6 @@
 
 # Product.create(name: "", description: "", long_description: "", ingredients: "", how_to_use: "", price: "", image_url: "")
 
-Product.destroy_all
-
 Product.create(name: "Intensive Moisturising Lotion – Mama Kraus’s Miracle Cream", description: "A Pure Natural Intensive Body Lotion which is fragrance free and soothing. This all-over moisturiser can be used on your body, hands and face. It is made using only natural ingredients.", long_description: "This Natural Intensive Moisturising Lotion from our fragrance-free range is a fabulous moisturiser. We use only organic ingredients, these include Organic Shea Butter and Organic Olive Oil to help replenish and soothe your skin. This lotion is also know as Mama Kraus’s Miracle Cream. It contains minimal ingredients for those with allergic and sensitive skin types. A great fragrance free lotion.
 Beeswax carries antiviral, anti-inflammatory, and antibacterial properties that are essential in fighting chapped skin and bacterial infections that tend to affect us most in the dry, winter months. It forms a protective wall by sealing in moisture in our skin without smothering and clogging up the pores.
 Organic Olive Oil is packed with anti-ageing antioxidants and hydrating squalene, making it superb for hair, skin, and nails.
