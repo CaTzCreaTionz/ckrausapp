@@ -2,17 +2,19 @@
 	<p id="notice"><%= notice %></p>
 
   <div class="container-fluid show-product-main">
-    <div class="row show-product-row">
+
+		<div class="row show-product-row">
       <div class="col-xs-6 col-sm-6 col-lg-4 col-xl-4 show-image-col">
         <%= image_tag(@product.image_url, class: "img-fluid product-show-image") %>
-      </div> <!-- end col show pic-->
+      </div> <!-- end show-image-col-->
       <div class="col show-product-col">
 				<h5><%= @product.name %></h5>
-        <p><%= @product.description %></p>
+				<div class="rated" data-score="<%= @product.average_rating %>"></div>
 				<p>
 					<strong>Price:</strong>
 					<%= number_to_currency(@product.price, unit: "€") %>
 				</p>
+				<p><%= @product.description %></p>
         <p>
 	        <strong>Description:</strong>
 	        <%= @product.long_description %>
@@ -25,13 +27,20 @@
 	        <strong>How to use:</strong>
 	        <%= @product.how_to_use %>
 	      </p>
-				<p>
-					<strong>Reviews:</strong>
-					<br>
+      </div> <!-- end show-product-col -->
 
-				</p>
-				<p><%= link_to 'Back to products', products_path, class: "btn btn-outline-secondary" %></p>
-      </div> <!-- end col show product details -->
-    </div> <!-- end row show product details -->
-  </div> <!-- end container show-product-main -->
-</section> <!-- end content-show-product -->
+
+			<div class="row show-comments-row">
+				<div class="col-xs-6 col-sm-6 col-lg-4 col-xl-4">
+					<p><%= render 'new_comment' %></p>
+					<p><%= link_to 'Back to products', products_path, class: "btn btn-outline-secondary" %></p>
+				</div>  <!--end col -->
+				<div class="col">
+					<p><strong>Reviews</strong></p>
+					<p><%= render 'comments' %></p>
+				</div>  <!--end col -->
+			</div>  <!-- end show-product-row -->
+
+		</div>  <!-- end show-comments-row -->
+  </div>  <!-- end container show-product-main -->
+</section>  <!-- end content-show-product -->

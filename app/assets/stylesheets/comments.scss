@@ -1,0 +1,18 @@
+// Place all the styles related to the comments controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+$primary-font-stack: Helvetica, sans-serif;
+$primary-color: #8962b3; // purple
+$complement-color: #99cc66; // green
+$grayscale-color: bebebe;
+$font-color: #34495e;
+
+//Comments
+.rated {
+  padding: 0 1em 1em 1em;
+}
+
+.rating {
+  padding: 0 1em 1em 1em;
+}

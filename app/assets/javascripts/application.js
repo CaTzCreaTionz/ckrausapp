@@ -16,6 +16,9 @@
 //= require jquery3
 //= require_tree .
 
+//= require jquery.raty.js
+
+
 $(document).on('turbolinks:load', function(){
   $(".alert").delay(4000).fadeOut("ease");
 });
