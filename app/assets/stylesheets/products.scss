@@ -16,7 +16,6 @@ body {
 }
 
 //product-overview
-
 .content-products-overview {
   width: 90%;
   margin: 0 auto;
@@ -68,6 +67,15 @@ body {
 .products-overview-main h5 {
   color: $primary-color;
   padding-top: 1em;
+
+  a {
+    color: $primary-color;
+  }
+
+  :hover {
+    text-decoration: none !important;
+    color: $complement-color !important;
+  }
 }
 
 .products-overview-main strong {
@@ -78,16 +86,6 @@ body {
   margin-right: .2em !important;
   margin-bottom: .2em !important;
 }
-
-.products-overview-main h5 a {
-  color: $primary-color;
-}
-
-.products-overview-main h5 a:hover {
-  text-decoration: none !important;
-  color: $complement-color !important;
-}
-
 //end products-overview
 
 //product-new
@@ -98,11 +96,9 @@ body {
   margin-top: 5.5em;
   margin-bottom: 1em;
 }
-
 //end products-new
 
 // products form
-
 .container-fluid-form h5 {
   margin-bottom: .2 !important;
   line-height: .5em !important;
@@ -115,11 +111,9 @@ body {
 .product-form {
  margin-bottom: 2em;
 }
-
 //end products form
 
 //product show
-
 .content-show-product {
   width: 90% !important;
   margin: 0 auto;
@@ -151,5 +145,4 @@ body {
 .btn-outline-secondary {
   margin: 1em !important;
 }
-
 //end product show

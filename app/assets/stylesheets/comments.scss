@@ -28,13 +28,14 @@ $font-color: #34495e;
 .pagination em {
   padding-right: .5em;
 }
- .pagination a {
-   padding-right: .5em;
-   text-decoration: none;
-   color: $primary-color;
+
+.pagination a {
+  padding-right: .5em;
+  text-decoration: none;
+  color: $primary-color;
  }
 
- .pagination a:hover {
-   text-decoration: none !important;
-   color: $complement-color !important;
+.pagination a:hover {
+  text-decoration: none !important;
+  color: $complement-color !important;
  }
