@@ -125,6 +125,8 @@ body {
   margin: 0 auto;
   margin-top: 6em !important;
   margin-bottom: 1em;
+  border: medium solid $primary-color;
+  border-radius: 15px;
 }
 
 .content-show-product h5 {
@@ -138,7 +140,7 @@ body {
 }
 
 .show-image-col {
-  padding-top: 2em;
+  padding-top: 1em;
 }
 
 .product-show-image {
@@ -146,13 +148,8 @@ body {
   padding: .5em;
 }
 
-.show-product-row {
-  border: medium solid $primary-color;
-  border-radius: 15px;
-}
-
-.show-comments-row {
-  padding: 1em;
+.btn-outline-secondary {
+  margin: 1em !important;
 }
 
 //end product show

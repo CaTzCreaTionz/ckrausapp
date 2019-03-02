@@ -8,6 +8,10 @@ $complement-color: #99cc66; // green
 $grayscale-color: bebebe;
 $font-color: #34495e;
 
+html {
+  height: 100%;
+}
+
 body {
   background-color: white;
   color: $font-color;
@@ -99,7 +103,6 @@ nav li a:hover {
 
 #home-hero {
   padding: 0;
-
   margin-bottom: 1em;
 }
 

@@ -1,8 +1,5 @@
 <section class="content-show-product">
-	<p id="notice"><%= notice %></p>
-
   <div class="container-fluid show-product-main">
-
 		<div class="row show-product-row">
       <div class="col-xs-6 col-sm-6 col-lg-4 col-xl-4 show-image-col">
         <%= image_tag(@product.image_url, class: "img-fluid product-show-image") %>
@@ -28,19 +25,21 @@
 	        <%= @product.how_to_use %>
 	      </p>
       </div> <!-- end show-product-col -->
-
+    </div>
 
 			<div class="row show-comments-row">
 				<div class="col-xs-6 col-sm-6 col-lg-4 col-xl-4">
 					<p><%= render 'new_comment' %></p>
-					<p><%= link_to 'Back to products', products_path, class: "btn btn-outline-secondary" %></p>
 				</div>  <!--end col -->
 				<div class="col">
+					<br>
 					<p><strong>Reviews</strong></p>
 					<p><%= render 'comments' %></p>
+					<%= will_paginate @comments %>
+					<%= link_to 'Back to products', products_path, class: "btn btn-outline-secondary" %>
 				</div>  <!--end col -->
 			</div>  <!-- end show-product-row -->
 
 		</div>  <!-- end show-comments-row -->
-  </div>  <!-- end container show-product-main -->
+
 </section>  <!-- end content-show-product -->

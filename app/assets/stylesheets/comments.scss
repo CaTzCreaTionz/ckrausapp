@@ -16,3 +16,25 @@ $font-color: #34495e;
 .rating {
   padding: 0 1em 1em 1em;
 }
+
+.show-comments-col small {
+  margin-left: 1.3em;
+}
+
+.pagination span {
+  padding-right: .5em;
+}
+
+.pagination em {
+  padding-right: .5em;
+}
+ .pagination a {
+   padding-right: .5em;
+   text-decoration: none;
+   color: $primary-color;
+ }
+
+ .pagination a:hover {
+   text-decoration: none !important;
+   color: $complement-color !important;
+ }
