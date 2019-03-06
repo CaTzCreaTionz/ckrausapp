@@ -1,16 +1,28 @@
-<h2>Forgot your password?</h2>
+<section class="form-elegant">
+  <div class="card sign-in">
+    <div class="card-body mx-4">
 
-<%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
-  <%= render "devise/shared/error_messages", resource: resource %>
+      <div class="text-center">
+        <h3 class="dark-grey-text mb-5"><strong>Forgot your password?</strong></h3>
+      </div>
 
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+
+      <%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
+        <%= render "devise/shared/error_messages", resource: resource %>
+
+        <div class="md-form">
+          <%= f.email_field :email, autofocus: true, autocomplete: "email", class: "form-control", placeholder: "Your email"%>
+        </div>
+
+        <div class="md-form">
+          <%= f.submit "Send me reset password instructions", class: "btn blue-gradient btn-block btn-rounded z-depth-1a" %>
+        </div>
+      <% end %>
+    </div>
+
+      <div class="modal-footer mx-5 pt-3 mb-1">
+      <p class="font-small grey-text d-flex justify-content-end">Not a member? <%= link_to "Sign up", new_registration_path(resource_name), class: "blue-text ml-1" %></p>
+      </div>
+
   </div>
-
-  <div class="actions">
-    <%= f.submit "Send me reset password instructions" %>
-  </div>
-<% end %>
-
-<%= render "devise/shared/links" %>
+</section>

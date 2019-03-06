@@ -52,20 +52,34 @@ nav li a:hover {
 }
 
 .search-form-field {
-    margin-top: 5px;
-    color: $font-color;
-    border-color: $primary-color !important;
-    border: 1px dotted $primary-color !important;
-    height: 30px;
-    padding: 10px;
+  margin-top: 5px;
+  color: $font-color;
+  border-color: $primary-color !important;
+  border: 1px dotted $primary-color !important;
+  height: 30px;
+  padding: 10px;
+}
+
+.search-form-field :focus {
+  border-color: rgb(137, 98, 179) !important;
+  border: 1px dotted $primary-color !important;
+  box-shadow: 0 2px 5px 0 rgba(87, 37, 167, 0.26), 0 4px 12px 0 rgba(87, 37, 167, 0.25);
+  -webkit-box-shadow: 0 2px 5px 0 rgba(87, 37, 167, 0.26), 0 4px 12px 0 rgba(87, 37, 167, 0.25);
 }
 
 .search-form-button {
-    background-color: $primary-color;
-    color: #fff;
-    cursor: pointer;
-    border-color: $primary-color !important;
-    border: 2px solid $primary-color !important;
+  background-color: $primary-color;
+  color: #fff;
+  cursor: pointer;
+  border-color: $primary-color !important;
+  border: 2px solid $primary-color !important;
+  box-shadow: 0 2px 5px 0 rgba(87, 37, 167, 0.26), 0 4px 12px 0 rgba(87, 37, 167, 0.25);
+  -webkit-box-shadow: 0 2px 5px 0 rgba(87, 37, 167, 0.26), 0 4px 12px 0 rgba(87, 37, 167, 0.25);
+}
+
+.search-form-button:hover{
+  -webkit-box-shadow: 0 5px 11px 0 rgba(85, 182, 255, 0.28), 0 4px 15px 0 rgba(36, 133, 255, 0.15);
+  box-shadow: 0 2px 5px 0 rgba(87, 37, 167, 0.83), 0 4px 12px 0 rgba(121, 155, 254, 0.25);
 }
 //end navigation
 
@@ -175,6 +189,12 @@ nav li a:hover {
 
 .form-group {
   text-align: left;
+}
+
+.form-control:focus {
+  border-color: rgb(137, 98, 179);
+  box-shadow: 0 2px 5px 0 rgba(87, 37, 167, 0.26), 0 4px 12px 0 rgba(87, 37, 167, 0.25);
+  -webkit-box-shadow: 0 2px 5px 0 rgba(87, 37, 167, 0.26), 0 4px 12px 0 rgba(87, 37, 167, 0.25);
 }
 //end contact
 

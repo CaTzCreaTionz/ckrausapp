@@ -2,16 +2,15 @@
   <% if signed_in? %>
     <div class="row show-comments">
       <div class="col show-comments-col">
-        <h5>Add a review:</h5>
+        <div class="text-left">
+          <p><strong>Add a review</strong></p>
+        </div>
         <%= form_for([@product, @product.comments.build]) do |f| %>
-        <p>
-          <%= f.label :body, "Comments" %><br>
-          <%= f.text_area :body, rows: "5", cols: "24"%>
-        </p>
+        <div class="md-form">
+          <%= f.text_area :body, class: "form-control", placeholder: "Please write your review here", rows: "5" %>
+        </div>
         <div class="rating"></div>
-        <p>
-          <%= f.submit "Submit" %>
-        </p>
+        <%= f.submit "Submit", class: "btn btn-outline-secondary" %>
         <% end %>
       </div>
     </div>

@@ -1,34 +1,46 @@
-<section class="content-user">
-  <div class="sign-in">
-    <h2>Sign up</h2>
+<section class="form-elegant">
+  <div class="card sign-in">
+    <div class="card-body mx-4">
 
-    <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
-      <%= render "devise/shared/error_messages", resource: resource %>
+        <div class="text-center">
+          <h3 class="dark-grey-text mb-5"><strong>Sign up</strong></h3>
+        </div>
 
-      <div class="field">
-        <%= f.label :email %><br />
-        <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
-      </div>
+        <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+        <%= render "devise/shared/error_messages", resource: resource %>
 
-      <div class="field">
-        <%= f.label :password %>
-        <% if @minimum_password_length %>
-        <em>(<%= @minimum_password_length %> characters minimum)</em>
-        <% end %><br />
-        <%= f.password_field :password, autocomplete: "new-password" %>
-      </div>
+        <div class="md-form">
+          <%= f.text_field :first_name, class: "form-control", placeholder: "First name", required: true %>
+        </div>
 
-      <div class="field">
-        <%= f.label :password_confirmation %><br />
-        <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
-        <br>
-      </div>
-      <br>
-      <div class="actions">
-        <%= f.submit "Sign up", class: "search-form-button" %>
-      </div>
-    <% end %>
-    <br>
-    <%= render "devise/shared/links" %>
+        <div class="md-form">
+          <%= f.text_field :last_name, class: "form-control", placeholder: "Last name" %>
+        </div>
+
+        <div class="md-form">
+          <%= f.email_field :email, autofocus: true, autocomplete: "email", class: "form-control", placeholder: "Your email"%>
+        </div>
+
+        <div class="md-form">
+          <% if @minimum_password_length %>
+          <em>(<%= @minimum_password_length %> characters minimum)</em>
+          <% end %>
+          <%= f.password_field :password, autocomplete: "new-password", class: "form-control", placeholder: "Password" %>
+        </div>
+
+        <div class="md-form">
+          <%= f.password_field :password_confirmation, autocomplete: "new-password", class: "form-control", placeholder: "Password confirmation" %>
+        </div>
+
+        <div class="text-center mb-3">
+          <%= f.submit "Sign up", class: "btn blue-gradient btn-block btn-rounded z-depth-1a" %>
+        </div>
+      <% end %>
+    </div>
+
+    <div class="modal-footer mx-5 pt-3 mb-1">
+      <p class="font-small grey-text d-flex justify-content-end">Already a member?<%= link_to "Log in", new_session_path(resource_name), class: "blue-text ml-1" %></p>
+    </div>
+
   </div>
 </section>
