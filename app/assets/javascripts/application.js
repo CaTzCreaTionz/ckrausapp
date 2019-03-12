@@ -14,6 +14,7 @@
 //= require activestorage
 //= require turbolinks
 //= require jquery3
+//= require ckeditor/init
 //= require_tree .
 
 //= require jquery.raty.js

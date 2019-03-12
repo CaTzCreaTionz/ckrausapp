@@ -5,4 +5,6 @@ class User < ActiveRecord::Base
          :recoverable, :rememberable, :validatable
    has_many :orders
    has_many :comments
+
+   validates :email, format: { with: URI::MailTo::EMAIL_REGEXP }
 end

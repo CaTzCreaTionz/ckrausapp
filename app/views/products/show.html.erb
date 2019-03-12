@@ -14,15 +14,15 @@
 				<p><%= @product.description %></p>
         <p>
 	        <strong>Description:</strong>
-	        <%= @product.long_description %>
+	        <%= @product.long_description.to_s.html_safe %>
 	      </p>
         <p>
 	        <strong>Ingredients:</strong>
-	        <%= @product.ingredients %>
+	        <%= @product.ingredients.to_s.html_safe %>
 	      </p>
 	      <p>
 	        <strong>How to use:</strong>
-	        <%= @product.how_to_use %>
+	        <%= @product.how_to_use.to_s.html_safe  %>
 	      </p>
       </div> <!-- end show-product-col -->
     </div>
