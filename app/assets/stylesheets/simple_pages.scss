@@ -17,6 +17,9 @@ body {
   color: $font-color;
   font: 100% $primary-font-stack;
   line-height: 1.5em;
+  position: relative;
+  min-height: 100%;
+  padding-bottom: 5em;
 }
 
 //Navigation
@@ -93,9 +96,8 @@ nav li a:hover {
   width: 100%;
   background-color: $primary-color;
   color: white;
-  display: flex;
-  justify-content: center;
-  align-content: center;
+  position: absolute;
+  bottom: 0;
 }
 
 .footer-copyright p {
@@ -162,7 +164,6 @@ nav li a:hover {
   width: 80%;
   margin: 0 auto;
   margin-top: 5.5em;
-  margin-bottom: 2em;
 }
 
 #contact-hero {

@@ -75,3 +75,5 @@ gem 'will_paginate', '~> 3.1.0'
 gem "ckeditor"
 
 gem 'rails-controller-testing'
+
+gem 'stripe'
