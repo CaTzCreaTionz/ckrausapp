@@ -2,7 +2,8 @@
   <% @comments.each do |comment| %>
       <div class="row show-comments">
         <div class="col show-comments-col">
-          <%= comment.user.first_name %> <small><em><%= "#{time_ago_in_words(comment.created_at)} ago" %></em></small>
+          <small><%= comment.user.first_name %></small>
+          <small><em><%= "#{time_ago_in_words(comment.created_at)} ago" %></em></small>
 
           <% if signed_in? && current_user.admin? %>
             <%= link_to ('<i class="fas fa-trash"></i>').html_safe, product_comment_path(comment.product, comment), method: :delete, data: { confirm: 'Are you sure?' } %>
