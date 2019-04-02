@@ -2,7 +2,7 @@
   <div class="container-fluid show-product-main">
 		<div class="row show-product-row">
       <div class="col-xs-6 col-sm-6 col-lg-4 col-xl-4 show-image-col">
-        <%= image_tag(@product.image_url, class: "img-fluid product-show-image") %>
+        <%= image_tag(@product.image_url, class: "img-fluid product-show-image img-zoom", data_zoom_image: "@product.product_image.url") %>
       </div> <!-- end show-image-col-->
       <div class="col show-product-col">
 				<h5><%= @product.name %></h5>
