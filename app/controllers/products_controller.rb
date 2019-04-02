@@ -1,5 +1,16 @@
 class ProductsController < ApplicationController
+  before_action :authenticate_user!, except: [:index, :show]
+  before_action :authenticate_admin!, except: [:index, :show]
   before_action :set_product, only: [:show, :edit, :update, :destroy]
+
+  def authenticate_admin!
+    # check if current user is admin
+    unless current_user.admin
+      # if current_user is not admin redirect to some route
+      redirect_to simple_pages_index_path, notice: "You are not authorised to perform that action!"
+    end
+    # if current_user is admin he will proceed to edit action
+  end
 
   # GET /products
   # GET /products.json
