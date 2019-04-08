@@ -6,7 +6,7 @@
       </div> <!-- end show-image-col-->
       <div class="col show-product-col">
 				<h5><%= @product.name %></h5>
-				<div class="rated" data-score="<%= @product.average_rating %>"></div>
+				<div class="rated" id="average-rating" data-score="<%= @product.average_rating %>"></div>
 				<p>
 					<strong>Price:</strong>
 					<%= number_to_currency(@product.price, unit: "€") %>
@@ -23,15 +23,15 @@
 
         <p>
 	        <strong>Description:</strong>
-	        <%= @product.long_description.to_s.html_safe %>
+	        <%= @product.long_description.html_safe %>
 	      </p>
         <p>
 	        <strong>Ingredients:</strong>
-	        <%= @product.ingredients.to_s.html_safe %>
+	        <%= @product.ingredients.html_safe %>
 	      </p>
 	      <p>
 	        <strong>How to use:</strong>
-	        <%= @product.how_to_use.to_s.html_safe  %>
+	        <%= @product.how_to_use.html_safe  %>
 	      </p>
       </div> <!-- end show-product-col -->
     </div>

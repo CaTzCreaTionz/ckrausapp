@@ -5,7 +5,7 @@
         <div class="text-left">
           <p><strong>Add a review</strong></p>
         </div>
-        <%= form_for([@product, @product.comments.build]) do |f| %>
+        <%= form_for([@product, @product.comments.build], remote:true) do |f| %>
         <div class="md-form">
           <%= f.text_area :body, class: "form-control", placeholder: "Please write your review here", rows: "5" %>
         </div>
