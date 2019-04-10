@@ -1,17 +1,19 @@
 <div class="col-sm-6 col-md-4 col-lg-3 col-xl-3 d-flex align-items-stretch col-product">
   <div class="card">
     <div class="card-body">
-      <%= link_to image_tag(product.image_url, class: "img-fluid product-img"), product_path(product.id) %>
-      <h5><%= link_to product.name, product_path(product.id) %></h5>
-      <p><%=product.description %></p>
-      <strong><%= number_to_currency(product.price, class:"price", unit: "€") %></strong>
-      <br>
-      <p>
-          <% if signed_in? && current_user.admin? %>
-            <%= link_to 'Edit', edit_product_path(product), class:"btn btn-warning btn-block" %>
-            <%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' }, class:"btn btn-danger btn-block" %>
-          <% end %>
-      </p>
+      <% cache product do %>
+        <%= link_to image_tag(product.image_url, class: "img-fluid product-img"), product_path(product.id) %>
+        <h5><%= link_to product.name, product_path(product.id) %></h5>
+        <p><%=product.description %></p>
+        <strong><%= number_to_currency(product.price, class:"price", unit: "€") %></strong>
+        <br>
+        <p>
+            <% if signed_in? && current_user.admin? %>
+              <%= link_to 'Edit', edit_product_path(product), class:"btn btn-warning btn-block" %>
+              <%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' }, class:"btn btn-danger btn-block" %>
+            <% end %>
+        </p>
+      <% end %>  
     </div>
   </div>
 </div><!-- /col -->

@@ -2,6 +2,7 @@
   <div class="container-fluid show-product-main">
 		<div class="row show-product-row">
       <div class="col-xs-6 col-sm-6 col-lg-4 col-xl-4 show-image-col">
+      <% cache @product do %>
         <%= image_tag(@product.image_url, class: "img-fluid product-show-image img-zoom", data_zoom_image: "@product.product_image.url") %>
       </div> <!-- end show-image-col-->
       <div class="col show-product-col">
@@ -33,6 +34,7 @@
 	        <strong>How to use:</strong>
 	        <%= @product.how_to_use.html_safe  %>
 	      </p>
+        <% end %>
       </div> <!-- end show-product-col -->
     </div>
 
