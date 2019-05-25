@@ -4,7 +4,11 @@ FactoryBot.define do
     factory :product do
       name
       price { 10.0 }
-      description { "Awesome cream" }
+      description { "Anything" }
+      long_description { "Anything" }
+      ingredients { "Anything" }
+      how_to_use { "Anything" }
+      image_url { "Anything" }
     end
 
   end

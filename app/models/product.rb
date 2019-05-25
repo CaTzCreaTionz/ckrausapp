@@ -3,6 +3,12 @@ class Product < ApplicationRecord
   has_many :comments
 
   validates :name, presence: true
+  validates :description, presence: true
+  validates :long_description, presence: true
+  validates :ingredients, presence: true
+  validates :how_to_use, presence: true
+  validates :price, presence: true
+  validates :image_url, presence: true
 
   def self.search(search_term)
     if Rails.env.production? # use "ilike" matching operator for postgres to ignore upper- and lower-case

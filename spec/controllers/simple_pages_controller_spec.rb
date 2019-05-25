@@ -1,6 +1,3 @@
-# More tests to write
-# render thank you page
-
 require 'rails_helper'
 
 describe SimplePagesController, type: :controller do
@@ -35,4 +32,5 @@ describe SimplePagesController, type: :controller do
       expect(response).to render_template('landing_page')
     end
   end
+
 end
